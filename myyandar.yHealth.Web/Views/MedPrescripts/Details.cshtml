@@ -1,0 +1,66 @@
+﻿@model myyandar.yHealth.BizData.MedPrescript
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MedPrescript</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrescDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrescDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dosage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dosage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicationPeriod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicationPeriod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FurtherInstrs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FurtherInstrs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
